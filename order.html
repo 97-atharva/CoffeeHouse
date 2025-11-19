@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Order Coffee - CoffeeHouse</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="order-bg">
+  <div class="order-box">
+    <h2>Place Your Order</h2>
+    <form>
+      <label for="coffee">Select Coffee</label>
+      <select id="coffee" required>
+        <option>Espresso</option>
+        <option>Latte</option>
+        <option>Cappuccino</option>
+        <option>Mocha</option>
+      </select>
+
+      <label for="quantity">Quantity</label>
+      <input type="number" id="quantity" min="1" value="1" required />
+
+      <label for="name">Full Name</label>
+      <input type="text" id="name" placeholder="Enter your name" required />
+
+      <label for="address">Delivery Address</label>
+      <input type="text" id="address" placeholder="Enter delivery address" required />
+
+      <button type="submit">Place Order</button>
+    </form>
+  </div>
+</body>
+</html>
+
